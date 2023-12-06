@@ -1,1 +1,1 @@
-git subtree push --prefix=Unity/Assets/LitJson https://github.com/Svily/LitJson.git upm
+git subtree push --prefix=Unity/Assets/LitJson https://github.com/seinocat/LitJson.git upm
