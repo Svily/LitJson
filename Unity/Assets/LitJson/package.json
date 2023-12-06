@@ -2,7 +2,7 @@
   "name": "com.seinocat.litjson",
   "displayName": "SeinoCat.LitJson",
   "description": "IK Solver",
-  "url" : "https://github.com/Svily/LitJson.git",
+  "url" : "https://github.com/seinocat/LitJson.git",
   "version": "0.0.1",
   "unity": "2020.3"
 }
