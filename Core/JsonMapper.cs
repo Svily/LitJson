@@ -925,12 +925,8 @@ namespace LitJson
             writer.WriteObjectStart();
             foreach (PropertyMetadata p_data in props)
             {
-                var skipAttributesList = p_data.Info.GetCustomAttributes(typeof(JsonIgnore), true);
-                var skipAttributes = skipAttributesList as ICollection<Attribute>;
-                if (skipAttributes.Count > 0)
-                {
+                if (writer.JsonIgnore && p_data.Info.GetCustomAttribute<JsonIgnore>() != null)
                     continue;
-                }
                 if (p_data.IsField)
                 {
                     writer.WritePropertyName(p_data.Info.Name);
@@ -939,7 +935,6 @@ namespace LitJson
                 else
                 {
                     PropertyInfo p_info = (PropertyInfo)p_data.Info;
-
                     if (p_info.CanRead)
                     {
                         writer.WritePropertyName(p_data.Info.Name);
