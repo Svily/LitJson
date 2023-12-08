@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.seinocat.utils": {
+      "version": "https://github.com/seinocat/SeinoUtils.git#0.0.35",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "65b21eb4e39a23e240444ed7352ac329c6b8c6a9"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.7",
       "depth": 0,

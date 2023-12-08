@@ -1,1 +1,0 @@
-git subtree push --prefix=Unity/Assets/LitJson https://github.com/seinocat/LitJson.git upm
